@@ -6,8 +6,8 @@ app.use(bodyParser.json());
 
 
 // a9
-const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/webdev');
+// const mongoose = require('mongoose');
+// mongoose.connect('mongodb://localhost:27017/webdev');
 
 
 
@@ -30,8 +30,8 @@ require('./services/movies-service')(app);
 require('./services/tweeter-service')(app);
 require('./services/profile-service')(app);
 
-require('./movies/service')(app);
-require('./tweets/tweeter-service')(app);
+// require('./movies/service')(app);
+// require('./tweets/tweeter-service')(app);
 
 app.listen(process.env.port || 4000);
 
